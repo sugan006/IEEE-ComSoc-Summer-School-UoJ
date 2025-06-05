@@ -1,0 +1,63 @@
+/* style_org.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container.committee {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.committee-central {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.committee-role {
+  text-align: left;
+}
+
+.committee-role h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #205295;
+}
+
+.members-group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.member-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  background: #ccc;
+}
+
+.member-name {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.member-affil {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+}

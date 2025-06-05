@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUMMER SCHOOL- Computer Intelligence Society</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/x-icon" href="./resources/cis.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Poppins:wght@300&family=Roboto:wght@300&family=Rubik+Puddles&display=swap"
+    rel="stylesheet" />
+
+  <!-- add this: -->
+  <!--     
+    footer {
+      background-color: #ededed;
+      display: flex;
+      flex-wrap: nowrap;
+      /* keep one row */
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2rem;
+      overflow-x: auto;
+      /* scroll on very narrow viewports */
+    }
+
+    /* each category column */
+    footer .recognition {
+      flex: 1 1 0;
+      min-width: 12rem;
+      /* adjust as needed */
+      text-align: center;
+      margin: 0 1rem;
+      /* gutter between columns */
+    }
+
+    /* category title */
+    footer .recognition h2 {
+      font-family: "Poppins", sans-serif;
+      color: #0b2647;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+    }
+
+    /* grid for logos inside each column */
+    footer .recognition .img-holder {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+      gap: 1rem;
+      align-items: center;
+      justify-items: center;
+    }
+
+    /* logos fill their grid cells */
+    footer .recognition .img-holder img {
+      width: 100%;
+      height: auto;
+      max-height: 6rem;
+      /* cap very tall images */
+      object-fit: contain;
+      display: block;
+    }
+
+    /* stack columns on small screens */
+    @media (max-width: 768px) {
+      footer {
+        flex-wrap: wrap;
+      }
+
+      footer .recognition {
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
+      }
+    }
+-->
+
+  <!--
+    /* ——————————————————————————————————————————————
+   Composite Footer Container
+   —————————————————————————————————————————————— */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f4f4f9;
+}
+
+/* ——————————————————————————————————————————————
+   Each Sponsor Column
+   —————————————————————————————————————————————— */
+footer .recognition {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Category Titles */
+footer .recognition h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e74c3c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Logo Grid/Flex */
+footer .recognition .img-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Logo Styling + Hover */
+footer .recognition .img-holder img {
+  max-width: 100px;
+  max-height: 80px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: #f8f8f8;
+  padding: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+footer .recognition .img-holder img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
+
+/* ——————————————————————————————————————————————
+   Top‐border Accent by Category (six columns)
+   —————————————————————————————————————————————— */
+footer .recognition:nth-child(1) { border-top: 4px solid #d4af37; } /* Organized By (gold) */
+footer .recognition:nth-child(2) { border-top: 4px solid #4682b4; } /* Technical Sponsor (blue) */
+footer .recognition:nth-child(3) { border-top: 4px solid #ffcc33; } /* Knowledge (yellow) */
+footer .recognition:nth-child(4) { border-top: 4px solid #e67e22; } /* Industrial (orange) */
+footer .recognition:nth-child(5) { border-top: 4px solid #9b59b6; } /* Media (purple) */
+footer .recognition:nth-child(6) { border-top: 4px solid #2ecc71; } /* Logistics (green) */
+
+/* Stack vertically on small screens */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .recognition {
+    width: 100%;
+    max-width: 500px;
+  }
+}-->
+
+  <!--
+/* Composite Footer Container */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f4f4f9;
+}
+
+/* Each Sponsor Column */
+footer .recognition {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Category Titles */
+footer .recognition h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e74c3c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Logo Grid/Flex with fixed size per category */
+footer .recognition .img-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  width: 100%;
+  height: 180px; /* fixed height for uniform boxes */
+}
+
+/* Uniform Logo Dimensions + Hover */
+footer .recognition .img-holder img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: #f8f8f8;
+  padding: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+footer .recognition .img-holder img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+}
+
+/* Top‐border Accent by Category */
+footer .recognition:nth-child(1) { border-top: 4px solid #d4af37; }
+footer .recognition:nth-child(2) { border-top: 4px solid #4682b4; }
+footer .recognition:nth-child(3) { border-top: 4px solid #ffcc33; }
+footer .recognition:nth-child(4) { border-top: 4px solid #e67e22; }
+footer .recognition:nth-child(5) { border-top: 4px solid #9b59b6; }
+footer .recognition:nth-child(6) { border-top: 4px solid #2ecc71; }
+
+/* Stack vertically on small screens */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .recognition {
+    width: 100%;
+    max-width: 500px;
+  }
+  footer .recognition .img-holder {
+    height: auto; /* allow auto height on mobile */
+  }
+}
+
+/* Composite Footer Container */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f4f4f9;
+}
+
+/* Each Sponsor Column */
+footer .recognition {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Category Titles */
+footer .recognition h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e74c3c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Logo Grid with dynamic columns */
+footer .recognition .img-holder {
+  --cols: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  gap: 15px;
+  margin-top: 10px;
+  width: 100%;
+  height: 120px;
+}
+
+/* Logos fill grid cells */
+footer .recognition .img-holder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Logo hover */
+footer .recognition .img-holder img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Top-border Accent by Category */
+footer .recognition:nth-child(1) { border-top: 4px solid #d4af37; }
+footer .recognition:nth-child(2) { border-top: 4px solid #4682b4; }
+footer .recognition:nth-child(3) { border-top: 4px solid #ffcc33; }
+footer .recognition:nth-child(4) { border-top: 4px solid #e67e22; }
+footer .recognition:nth-child(5) { border-top: 4px solid #9b59b6; }
+footer .recognition:nth-child(6) { border-top: 4px solid #2ecc71; }
+
+/* Stack vertically on small screens */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .recognition {
+    width: 100%;
+    max-width: 500px;
+  }
+  footer .recognition .img-holder {
+    height: auto;
+    grid-auto-rows: auto;
+  }
+}
+-->
+  <!--
+/* Composite Footer Container */
+footer {
+  display: flex;
+  flex-wrap: nowrap;              /* keep six columns in one row */
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f4f4f9;
+  overflow-x: auto;               /* allow scroll if viewport too narrow */
+}
+
+/* Each Sponsor Column */
+footer .recognition {
+  flex: 1 1 0;                    /* equal distribution, shrink as needed */
+  min-width: 0;                   /* allow shrinking below content width */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Category Titles */
+footer .recognition h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e74c3c;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Logo Grid: single row that fits images into fixed height */
+footer .recognition .img-holder {
+  --cols: 1;
+  display: grid;
+  grid-auto-flow: column;         /* force one row of columns */
+  grid-auto-columns: 1fr;         /* equal width columns */
+  gap: 15px;
+  margin-top: 10px;
+  width: 100%;
+  height: 120px;                  /* fixed frame height */
+  justify-items: center;
+  align-items: center;
+}
+
+/* Logos scale within grid cells, preserving aspect ratio */
+footer .recognition .img-holder img {
+  max-width: 100%;
+  max-height: 100%;
+  max-height: var(--max-logo-size, 80px); /* default 80px if not set inline */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Logo hover effect */
+footer .recognition .img-holder img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Top-border Accent by Category */
+footer .recognition:nth-child(1) { border-top: 4px solid #d4af37; }
+footer .recognition:nth-child(2) { border-top: 4px solid #4682b4; }
+footer .recognition:nth-child(3) { border-top: 4px solid #ffcc33; }
+footer .recognition:nth-child(4) { border-top: 4px solid #e67e22; }
+footer .recognition:nth-child(5) { border-top: 4px solid #9b59b6; }
+footer .recognition:nth-child(6) { border-top: 4px solid #2ecc71; }
+
+/* Always maintain single row, allow horizontal scroll */
+@media (max-width: 768px) {
+  footer {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  footer .recognition {
+    min-width: 0;
+  }
+  footer .recognition .img-holder {
+    height: 120px;                /* keep frame height on mobile */
+  }
+}
+
+footer .recognition .img-holder img.logo-small {
+  max-height: 60px;
+}
+
+footer .recognition .img-holder img.logo-large {
+  max-height: 100px;
+}
+-->
+
+  <style>
+/* Mobile Responsive Footer */
+@media (max-width: 768px) {
+  /* 1. Stack the columns */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: visible;    /* disable horizontal scroll */
+    padding: 20px;
+  }
+
+  /* 2. Make each .recognition full-width (up to a max) */
+  footer .recognition {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+
+  /* 3. Let logos wrap and auto-fit in rows */
+  footer .recognition .img-holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-auto-rows: 80px;
+    gap: 10px;
+    height: auto;           /* remove fixed height */
+    margin-top: 15px;
+  }
+
+  /* ensure each logo stays within its cell */
+  footer .recognition .img-holder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <div class="logo">
+        <!--<img src="./resources/" style="width:19rem;height: 4rem;" alt="" srcset="">-->
+        <div class="title">
+          <!--<img src="./resources/logo w glow.png" style="width: 16rem;height: 9rem;" alt="" srcset="">-->
+          
+        </div>
+      </div>
+      <div class="nav-items">
+        <a href="./index.html" class="selected">
+          <div class="nav-item ">
+            Home
+          </div>
+        </a>
+        <a href="./register.html?p=detailedProgramme">
+          <div class="nav-item ">
+            Programme
+          </div>
+        </a>
+        <a href="./register.html">
+          <div class="nav-item ">
+            Registration
+          </div>
+        </a>
+        <a href="./committee.html">
+          <div class="nav-item ">
+            Committee
+          </div>
+        </a>
+        <a href="./venue.html">
+          <div class="nav-item ">
+            Venue
+          </div>
+        </a>
+        <a href="./gallery.html">
+          <div class="nav-item ">
+            Gallery
+          </div>
+        </a>
+        <a href="./contact.html">
+          <div class="nav-item ">
+            Contact Us
+          </div>
+        </a>
+      </div>
+    </header>
+    <section class="main">
+      <br><br><br><br>
+      <h3><b>IEEE ComSoc Summer School - Sri Lanka <br></b> </h3>
+
+      <h3 class="subtitle">Faculty of Engineering, University of Jaffna </h3>
+      <h3>11-15 August 2025</h3>
+
+      <div class="scroll-wrapper">
+        <h3 class="scrolling-text">
+          <b>Envisioning the Future – Pioneering Next Generation Communication Technologies</b>
+        </h3>
+      </div>
+
+    </section>
+
+
+
+  </div>
+  <div class="content-container">
+    <div class="content">
+      <h1>Introduction</h1>
+      <p class="justify">
+        <strong>IEEE ComSoc Summer School – Jaffna, Sri Lanka</strong><br>
+      <h3><em><strong>Envisioning the Future – Pioneering Next Generation Communication Technologies</em></strong></h3>
+      <br>
+      </p>
+
+      <p class="justify">
+        This IEEE ComSoc School Series event aims to develop a strong foundation in communication technologies while
+        introducing
+        participants to cutting-edge research trends that are reshaping the field. The 5-day summer school will focus on
+        next-generation communication systems with a special emphasis on <strong>Quantum Communication</strong>,
+        <strong>Machine
+          Learning</strong>, and <strong>Artificial Intelligence</strong>. Participants will also explore advanced
+        domains
+        and
+        their applications, including <strong>Optical Communication Systems</strong>, <strong>Radar and
+          Imaging</strong>,
+        <strong>Natural Language Processing</strong>, <strong>Deep Space Communication</strong>,
+        <strong>Blockchain</strong>,
+        and the <strong>Internet of Things (IoT)</strong>.<br><br>
+
+        The school is designed for individuals passionate about exploring and deepening their knowledge of communication
+        technologies. Whether you come with a basic understanding or a strong background in telecommunications, computer
+        science, electronics, or related disciplines, this summer school offers invaluable insights and hands-on
+        experiences.<br><br>
+
+        We are proud to host a diverse faculty of <strong>leading academics</strong> known for their contributions to
+        communication technologies and <strong>industry experts</strong> with real-world implementation experience. This
+        unique
+        integration of academic excellence and industry relevance ensures a high-impact learning environment.<br><br>
+      </p>
+
+      The comprehensive program includes:<br>
+      - <strong>20+ hours of ecture sessions</strong><br>
+      - <strong>10+ hours of practical hands-on training and tutorials</strong><br>
+      - <strong>Panel discussions and networking opportunities</strong><br><br>
+
+      This summer school provides an exceptional platform for <strong>undergraduate and postgraduate students</strong>
+      to:<br>
+      - Grasp the state-of-the-art in next-generation communication systems<br>
+      - Apply modern techniques and tools for practical innovations<br>
+      - Engage in interdisciplinary discussions and collaborations<br>
+      - Connect with professionals and researchers for future opportunities<br><br>
+
+      Above all, the IEEE ComSoc Summer School in Jaffna, Sri Lanka, strives to empower participants with the skills and
+      knowledge to <strong>contribute to the betterment of Sri Lanka through technological advancement</strong>.
+      </p>
+
+      <h3>Target Group</h3>
+
+      <p class="justify">
+        The target audience for the Summer School on Computational Intelligence includes <strong>undergraduate and
+          postgraduate students</strong>, as well as <strong>enthusiasts</strong> eager to expand their knowledge and
+        skills in this rapidly evolving field. Regardless of your background or level of expertise, this program offers
+        a valuable learning experience and an opportunity to engage with experts and peers in the computational
+        intelligence community.<br><br>
+
+        <strong>Participation is available for a limited number of ComSoc Student Members from the Sri Lanka
+          region.</strong> <span style="color:#d9534f;"><strong>Membership is <u>not required</u> in order to
+            apply</strong></span>; however, if your application is accepted, you will need to become a ComSoc Student
+        Member in order to register and attend the event.
+      </p>
+
+
+      <a href="https://www.comsoc.org/education-training/ieee-comsoc-school-series/2025-ieee-comsoc-school-series-jaffna-sri-lanka-event"
+        class="btn-link" target="_blank" rel="noopener noreferrer"
+        aria-label="More details about IEEE ComSoc Summer School in Jaffna">
+        Learn More & Register
+      </a>
+      </p>
+      </p>
+    </div>
+    <div class="content-img">
+      <a href="./register.html?p=importantDates">
+        <div class="box" style="background-color: #00B5E2;">
+          Important Dates
+        </div>
+      </a>
+      <a href="./resources/comming soon fnl.jpg" download="summer school.jpg">
+        <div class="box" style="background-color: #00629B;">
+          Flyer
+        </div>
+      </a>
+      <a href="./register.html?p=registration">
+        <div class="box" style="background-color: #009CA6;">
+          Registration
+        </div>
+      </a>
+      <a href="./register.html?p=detailedProgramme">
+        <div class="box" style="background-color: #861F41;">
+          Programme
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="speaker-container">
+    <h1>Keynote Speakers</h1>
+    <div class="day">
+      <img src="./resources/comming soon.png" alt="Coming Soon" class="coming-soon-img" />
+      <!--
+      <h2>Day 1 : Artificial Intelligence, Machine Learning and Deep Learning</h2>
+      <div class=" grid-1">
+        <p class="topic" style="margin-top:1.2rem;">Fairness in AI: AI for Disadvantaged Communities</p>
+        <div class="grid">
+          <div class="speaker">
+
+            <img src="./resources/Saman_Halgamuge.jpg" alt="" srcset="">
+            <a href="./speakers/saman.html">
+              <h2>Prof. Saman Halgamuge </h2>
+            </a>
+            <p>University of Melbourne,
+            </p>
+            <p>Australia</p>
+            </p>
+
+          </div>
+          <div class="speaker">
+            <img src="./resources/Rajith.jpg" alt="" srcset="">
+            <a href="./speakers/rajith.html">
+              <h2>
+                Dr. Rajith Vidanaarachchi</h2>
+            </a>
+            <p>University of Melbourne,</p>
+            <p>Australia</p>
+          </div>
+          <div class="speaker">
+            <img src="./resources/Maneesha.jpeg" alt="" srcset="">
+            <a href="./speakers/maneesha.html">
+              <h2>Dr. Maneesha Perera
+              </h2>
+            </a>
+            <p>University of Melbourne,</p>
+            <p>Australia</p>
+
+          </div>
+        </div>
+
+      </div>-->
+      <!--<div class="grid w-grid">
+
+
+        
+        <div class="speaker">
+          <p class="topic">Introduction to Machine Learning & Deep Learning</p>
+          <img src="./resources/shymalan.jpg" alt="" srcset="">
+          <a href="./speakers/siyamalan.html">
+            <h2>Prof. M. Siyamalan
+            </h2>
+          </a>
+          <p>University of Jaffna,
+          </p>
+          <p>Sri Lanka.
+          </p>
+        </div>
+        <div class="speaker">
+          <p class="topic">Practicing Artificial Intelligence in Finance</p>
+          <img src="./resources/Subha Fdo - 2.jpg" alt="" srcset="">
+          <a href="./speakers/subha.html">
+            <h2>Dr. Subha Fernando </h2>
+          </a>
+          <p>University of Moratuwa,</p>
+          <p>Sri Lanka</p>
+
+        </div>
+        <div class="speaker grid-1-3">
+          <p class="topic">Preparing for the Future of Work: Navigating GPT and Automation in Industrial Professions</p>
+          <img src="./resources/Samudra.jpg" alt="" srcset="">
+          <a href="./speakers/samdura.html">
+            <h2>Mr. Samudra Kanankearachchi </h2>
+          </a>
+          <p>Director of Technology,</p>
+          <p>99x</p>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="day white"> -->
+      <!--
+      <h2>Day 2 : Natural Language Processing</h2>
+      <div class="grid w-grid">
+        <div class="speaker">
+          <p class="topic">Building Computational Resources for Sri Lankan National Languages</p>
+          <img src="./resources/Gihan-Dias.jpg" alt="" srcset="">
+          <a href="./speakers/gihan.html">
+            <h2>Prof. Gihan Dias
+            </h2>
+          </a>
+
+          <p>University of Moratuwa,
+          </p>
+          <p>Sri Lanka.
+          </p>
+
+
+        </div>
+        <div class="speaker">
+          <p class="topic">Open Issues in Audio AI Privacy and Security</p>
+          <img src="./resources/Jennifer_Williams.jpg" alt="" srcset="">
+          <a href="./speakers/jennifer.html">
+            <h2>Prof. Jennifer Williams </h2>
+          </a>
+          <p>University of Southampton, </p>
+          <p>United Kingdom</p>
+        </div>
+
+
+        <div class="grid small-grid grid-1">
+
+          <div class=" grid-1">
+            <p class="topic" style="margin-top:1.2rem;">Hands-on Training : Developing Language Tools & Models</p>
+            <div class="dual-speaker">
+              <div class="speaker">
+                <img src="./resources/charles.jpg" alt="" srcset="">
+                <a href="./speakers/charles.html">
+                  <h2>
+                    Dr. E. Y. A. Charles</h2>
+                </a>
+                <p>University of Jaffna,</p>
+                <p>Sri Lanka</p>
+              </div>
+              <div class="speaker">
+                <img src="./resources/sarves_200x280.jpg" alt="" srcset="">
+                <a href="./speakers/sarweswan.html">
+                  <h2>Dr. K. Sarveswaran</h2>
+                </a>
+                <p>University of Jaffna,</p>
+                <p>Sri Lanka</p>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="grid small-grid grid-1">
+
+          <div class=" grid-1">
+            <p class="topic" style="margin-top:1.2rem;">Democratizing LLMs with h2oGPT and H2O LLM Studio</p>
+            <div class="dual-speaker">
+              <div class="speaker">
+                <img src="./resources/Sanjeepan_Sivapiran.jpeg" alt="" srcset="">
+                <a href="./speakers/sajeepan.html">
+                  <h2>
+                    Mr. Sanjeepan Sivapiran</h2>
+                </a>
+                <p>Machine Learning Engineer,</p>
+                <p>H2O.ai</p>
+              </div>
+              <div class="speaker">
+                <img src="./resources/Praveen_Sivakumar.jpg" alt="" srcset="">
+                <a href="./speakers/praveen.html">
+                  <h2>Mr. Praveen Sivakumar</h2>
+                </a>
+                <p>Data Scientist,</p>
+                <p>H2O.ai</p>
+
+              </div>
+              <div class="speaker grid-1-3" style="margin-top: 2rem;">
+                <p class="topic">Dive into Automatic Machine Learning <br> with H2O AutoML</p>
+                <img src="./resources/Mathanraj-Sharma.jpeg" alt="" srcset="">
+                <a href="./speakers/mathanraj.html">
+                  <h2>Mr. Mathanraj Sharma</h2>
+                </a>
+                <p>Machine Learning Engineer,</p>
+                <p>H2O.ai</p>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <hr>
+    <div class="day">
+      <h2>Day 3 : IoT and Robotics </h2>
+      <div class="grid w-grid">
+        <div class="speaker">
+          <p class="topic">Emerging Trends in IoT</p>
+          <img src="./resources/ragel.jpeg" alt="" srcset="">
+          <a href="./speakers/roshan.html">
+            <h2>Prof. Roshan G. Ragel </h2>
+          </a>
+          <p>University of Peradeniya,</p>
+          <p>Sri Lanka</p>
+        </div>
+        <div class="speaker">
+          <p class="topic">Introduction to Robotics <span style="font-weight: 200;font-style: italic;"></span> </p>
+          <img src="./resources/Thrish-Nanayakkara.jpg" alt="" srcset="">
+          <a href="./speakers/thrishantha.html">
+            <h2>Prof. Thrishantha Nanayakkara</h2>
+          </a>
+          <p>Imperial College London,</p>
+          <p>United Kingdom</p>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="grid small-grid grid-1">
+
+        <div class=" grid-1">
+          <p class="topic" style="margin-top:1.2rem;">Hands on Training: IoT Devices</p>
+          <div class="triple-speaker">
+            <div class="speaker">
+              <img src="./resources/Anantharajah-Kaneswaran.jpg" alt="" srcset="">
+              <a href="./speakers/kaneswaran.html">
+                <h2>Dr. A. Kaneswaran </h2>
+              </a>
+              <p>University of Jaffna,</p>
+              <p>Sri Lanka</p>
+            </div>
+            <div class="speaker">
+              <img src="./resources/Valluvan.jpg" alt="" srcset="">
+              <a href="./speakers/valluvan.html">
+                <h2>Mr. R. Valluvan </h2>
+              </a>
+              <p>University of Jaffna,</p>
+              <p>Sri Lanka</p>
+            </div>
+            <div class="speaker">
+              <img src="./resources/suthakar_150x150-1.jpg" alt="" srcset="">
+              <a href="./speakers/suthakar.html">
+                <h2>Mr. S. Suthakar</h2>
+              </a>
+              <p>University of Jaffna,</p>
+              <p>Sri Lanka</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="grid-1 w-grid">
+          <p class="topic" style="margin-top:1.2rem;">Industrial Norm on IoT and its Advancement in Healthcare,
+            Agriculture and Manufacturing
+            Ecosystems</p>
+          <div class="dual-speaker">
+            <div class="speaker">
+              <img src="./resources/miller.png" alt="" srcset="">
+              <a href="./speakers/miller.html">
+                <h2>Mr. Miller Alexander Rajendran</h2>
+              </a>
+              <p>CEO</p>
+              <p>SenzAgro Solution</p>
+            </div>
+            <div class="speaker">
+              <img src="./resources/Arunn.jpg" alt="" srcset="">
+              <a href="./speakers/arunn.html">
+                <h2>Mr. Arunn Balasundram</h2>
+              </a>
+              <p>AIoT Architect</p>
+              <p>Senzmate IoT Intelligence</p>
+            </div>
+          </div>
+
+        </div>
+      -->
+    </div>
+
+    <div class="video-container">
+      <video src="./resources/VID_20221009_215551.mp4" loop autoplay></video>
+    </div>
+
+  </div>
+  </div>
+  <section>
+  <!-- Sponsors Footer -->
+  <footer>
+    <div class="recognition">
+      <h2>Organized By</h2>
+      <div class="img-holder">
+        <img src="./resources/Crest-UJ-1024.png" alt="Crest UJ" class="logo-small">
+        <img src="./resources/IEEE ComSoc UoJ Logo.png" alt="IEEE ComSoc UoJ" class="logo-small">
+      </div>
+    </div>
+    <div class="recognition">
+      <h2>Gold Sponsor</h2>
+      <div class="img-holder">
+        <img src="./resources/ieee-comsoc.png" alt="IEEE ComSoc" class="logo-large">
+      </div>
+    </div>
+    <div class="recognition">
+      <h2>Knowledge Partners</h2>
+      <div class="img-holder">
+        <img src="./resources/NVLogo_2D.jpg" alt="NVIDIA" class="logo-large">
+      </div>
+    </div>
+    <div class="recognition">
+      <h2>Industrial Partners</h2>
+      <div class="img-holder">
+        <!--<img src="./resources/freesat.png" alt="Freesat" class="logo-small">
+        <img src="./resources/senz.jpg" alt="Senz" class="logo-small">-->
+        <img src="./resources/slt-log.svg" alt="H2O.ai" class="logo-small">
+      </div>
+    </div>
+    <!--
+    <div class="recognition">
+      <h2>Media Partners</h2>
+      <div class="img-holder">
+        <img src="./resources/TV_Derana_Logo.png" alt="TV Derana" class="logo-small">
+        <img src="./resources/ITN_Television_Logo_of_Sri_lanka.png" alt="ITN" class="logo-small">
+      </div>
+    -->
+    </div>
+    <div class="recognition">
+      <h2>Logistics &amp; Supply Partners</h2>
+      <div class="img-holder">
+        <img src="./resources/CEILUX EVENTS (PRIVATE) LIMITED.jpg" alt="Ceilux Events">
+      </div>
+    </div>
+  </footer>
+  </section>
+
+  <!-- Bottom copyright bar -->
+  <div class="site-footer-line">
+    Website developed by Enthusiast volunteer.
+    <br>
+    © 2025 IEEE Communication Society Student Branch Chapter, University of Jaffna. All Rights Reserved.
+  </div>
+
+  <!--<footer>
+    <div class="recognition">
+      <h2>Organized By</h2>
+      <div class="img-holder">
+        <img src="./resources/Crest-UJ-1024.png" alt="Crest UJ">
+        <img src="./resources/Untitled-1-01.png" alt="Untitled Logo">
+      </div>
+    </div>
+    <div class="recognition">
+      <h2>Technical Sponsor</h2>
+      <div class="img-holder">
+        <img src="./resources/ieee mb blue.png" alt="IEEE MB Blue">
+      </div>
+    </div>
+    <div class="recognition">
+      <h2>Sponsor</h2>
+      <div class="img-holder">
+        <img src="./resources/wso2-logo.png" alt="WSO2 Logo">
+      </div>
+    </div>
+    <div class="sponsors">
+      <h2>Industrial Partners</h2>
+      <div class="img-holder">
+        <img src="./resources/99.png" alt="Partner 99">
+        <img src="./resources/senz.jpg" alt="Partner Senz">
+        <img src="./resources/H20ai.png" alt="Partner H20ai">
+      </div>
+    </div>
+  </footer>-->
+
+
+</body>
+<script>
+  function isScrolledIntoView(element) {
+    var elementTop = element.getBoundingClientRect().top,
+      elementBottom = element.getBoundingClientRect().bottom;
+
+    return elementTop >= 0 && elementBottom <= window.innerHeight;
+  }
+  const _video = document.querySelector('video');
+
+  window.addEventListener("scroll", function () {
+    if (isScrolledIntoView(_video)) {
+      _video.play();
+    }
+    else {
+      _video.pause()
+    }
+  })
+</script>
+
+</html>
