@@ -671,8 +671,8 @@ hr {
 
 .speaker>img {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
 }
 
 .speaker>a {
@@ -747,10 +747,47 @@ hr {
   margin: 0 auto;
 }
 
-.img-holder {
-  display: flex;
+.img-holder2 {
+  /*display: flex;
   justify-content: center;
+  align-items: center;*/
+  /* added by anuraj*/
+  display: flex;
+  justify-content: space-around; /* or space-between / center */
   align-items: center;
+  gap: 1rem;                      /* optional spacing between images */
+  flex-wrap: wrap;               /* optional: allows wrapping on smaller screens */
+  padding: 1rem;
+  
+}
+
+.logo2 {
+  max-width: 100%;     /* prevent overflow */
+  width: 40%;          /* each image gets ~1/3 of the container width */
+  height: auto;        /* maintain aspect ratio */
+  object-fit: contain; /* ensures image fits without cropping */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* changes cursor on hover */
+
+}
+
+
+.logo2:hover {
+  transform: scale(1.05); /* slightly zoom in */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+
+.logo2-large {
+  width: 80%;  /* increase size only for this image */
+}
+
+.logo2-medium {
+  width: 60%;  /* increase size only for this image */
+}
+
+.logo2-small {
+  width: 30%;  /* increase size only for this image */
 }
 
 .w-grid {
@@ -1058,7 +1095,7 @@ footer .recognition .img-holder {
   gap: 15px;
   margin-top: 10px;
   width: 100%;
-  height: 120px;
+  height: 200px;
   /* fixed frame height */
   justify-items: center;
   align-items: center;
@@ -1080,6 +1117,12 @@ footer .recognition .img-holder img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* Logo hover effect *//*
+footer .recognition .img-holder2 img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}*/
 
 /* Top-border Accent by Category */
 footer .recognition:nth-child(1) {
@@ -1125,10 +1168,13 @@ footer .recognition:nth-child(6) {
 
 footer .recognition .img-holder img.logo-small {
   max-height: 60px;
+  height: auto;
 }
 
 footer .recognition .img-holder img.logo-large {
-  max-height: 100px;
+  /*max-height: 80px;*/
+  max-width: 200px;
+  height: auto;
 }
 
 /*Intractive Footer End*/
@@ -1230,9 +1276,9 @@ footer .recognition .img-holder img.logo-large {
   animation: scroll-left-to-right 15s linear infinite;
   font-size: 2rem;
   font-weight: bold;*/
-  position: absolute;
+  /*position: absolute;*/
   white-space: nowrap;
-  animation: scroll-left-to-right 20s linear infinite;
+  animation: scroll-right-to-left 20s linear infinite;
   font-size: 2.5em;
   font-weight: bold;
   color: #fff;
@@ -1240,6 +1286,15 @@ footer .recognition .img-holder img.logo-large {
   /* optionally, if you want a subtle gray shadow for “depth”: */
   text-shadow: 1px 2px 2px #fddbb9;
   margin-top: 3rem;
+}
+
+@keyframes scroll-right-to-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes scroll-left-to-right {

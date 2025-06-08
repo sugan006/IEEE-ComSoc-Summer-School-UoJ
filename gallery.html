@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SUMMER SCHOOL- Computer Intelligence Society</title>
+  <title>SUMMER SCHOOL- Communication Society</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,44 @@
     href="https://fonts.googleapis.com/css2?family=Monomaniac+One&family=Poppins:wght@300&family=Roboto:wght@300&family=Rubik+Puddles&display=swap"
     rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+  /* Mobile Responsive Footer */
+  @media (max-width: 768px) {
+    /* 1. Stack the columns */
+    footer {
+      flex-direction: column;
+      align-items: center;
+      overflow-x: visible;    /* disable horizontal scroll */
+      padding: 20px;
+    }
+
+    /* 2. Make each .recognition full-width (up to a max) */
+    footer .recognition {
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 30px;
+    }
+
+    /* 3. Let logos wrap and auto-fit in rows */
+    footer .recognition .img-holder {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+      grid-auto-rows: 80px;
+      gap: 10px;
+      height: auto;           /* remove fixed height */
+      margin-top: 15px;
+    }
+
+    /* ensure each logo stays within its cell */
+    footer .recognition .img-holder img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  </style>
 </head>
 
 <body>
@@ -292,13 +330,15 @@
   </div>
 
 
+  <section>
   <!-- Sponsors Footer -->
   <footer>
     <div class="recognition">
       <h2>Organized By</h2>
-      <div class="img-holder">
-        <img src="./resources/Crest-UJ-1024.png" alt="Crest UJ" class="logo-small">
-        <img src="./resources/IEEE ComSoc UoJ Logo.png" alt="IEEE ComSoc UoJ" class="logo-small">
+      <div class="img-holder2">
+        <img src="./resources/Crest-UJ-1024.png" alt="Crest UJ" class="logo2">
+        <img src="./resources/IEEE ComSoc UoJ Logo.png" alt="IEEE ComSoc UoJ" class="logo2">
+        
       </div>
     </div>
     <div class="recognition">
@@ -313,12 +353,23 @@
         <img src="./resources/NVLogo_2D.jpg" alt="NVIDIA" class="logo-large">
       </div>
     </div>
+
+    <div class="recognition">
+      <h2>Technical Sponsor</h2>
+      <div class="img-holder2">
+        <img src="./resources/FN logo.png" alt="IEEE Collabratec" class="logo2 logo2-large">
+        
+      </div>
+    </div>
     <div class="recognition">
       <h2>Industrial Partners</h2>
       <div class="img-holder">
-        <!--<img src="./resources/freesat.png" alt="Freesat" class="logo-small">
-        <img src="./resources/senz.jpg" alt="Senz" class="logo-small">-->
-        <img src="./resources/slt-log.svg" alt="H2O.ai" class="logo-small">
+        <!-- You can uncomment these if needed later -->
+        <!--
+        <img src="./resources/freesat.png" alt="Freesat" class="logo">
+        <img src="./resources/senz.jpg" alt="Senz" class="logo">
+        -->
+        <img src="./resources/slt-log.svg" alt="SLT Logo" class="logo logo-large">
       </div>
     </div>
     <!--
@@ -332,15 +383,18 @@
     </div>
     <div class="recognition">
       <h2>Logistics &amp; Supply Partners</h2>
-      <div class="img-holder">
-        <img src="./resources/CEILUX EVENTS (PRIVATE) LIMITED.jpg" alt="Ceilux Events">
+      <div class="img-holder2">
+        <img src="./resources/collabratec_logo.webp" alt="IEEE Collabratec" class="logo2 logo2-large">
+        <img src="./resources/CEILUX EVENTS (PRIVATE) LIMITED.png" alt="Ceilux Events" class="logo2 ">
+        <img src="./resources/IEEE Puzzler.png" alt="IEEE Puzzler" class="logo2">
       </div>
     </div>
   </footer>
+  </section>
 
   <!-- Bottom copyright bar -->
   <div class="site-footer-line">
-    Website developed by S.P.D. Anuraj – Founding Advisor.
+    Website developed by an enthusiastic volunteer.
     <br>
     © 2025 IEEE Communication Society Student Branch Chapter, University of Jaffna. All Rights Reserved.
   </div>
