@@ -777,6 +777,10 @@ hr {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* subtle shadow */
 }
 
+.logo2-exlarge {
+  width: 120%;  /* increase size only for this image */
+}
+
 
 .logo2-large {
   width: 80%;  /* increase size only for this image */
