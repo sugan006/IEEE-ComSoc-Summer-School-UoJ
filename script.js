@@ -79,7 +79,7 @@ const registration = () => {
         rel="noopener noreferrer"
         aria-label="More details about IEEE ComSoc School Series in Jaffna"
       >
-        Learn More &amp; Register
+        Learn More &amp; Apply
       </a>
     </div>
   `;

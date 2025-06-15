@@ -560,7 +560,7 @@ footer .recognition .img-holder img.logo-large {
       </p>
 
       The comprehensive program includes:<br>
-      - <strong>20+ hours of ecture sessions</strong><br>
+      - <strong>20+ hours of lecture sessions</strong><br>
       - <strong>10+ hours of practical hands-on training and tutorials</strong><br>
       - <strong>Panel discussions and networking opportunities</strong><br><br>
 
@@ -594,7 +594,7 @@ footer .recognition .img-holder img.logo-large {
       <a href="https://www.comsoc.org/education-training/ieee-comsoc-school-series/2025-ieee-comsoc-school-series-jaffna-sri-lanka-event"
         class="btn-link" target="_blank" rel="noopener noreferrer"
         aria-label="More details about IEEE ComSoc Summer School in Jaffna">
-        Learn More & Register
+        Learn More & Apply
       </a>
       </p>
       </p>
@@ -634,7 +634,7 @@ footer .recognition .img-holder img.logo-large {
         <!--<p class="topic" style="margin-top:1.2rem;">Fairness in AI: AI for Disadvantaged Communities</p>-->
         <div class="grid">
 
-          <div class="speaker">
+          <div class="speaker" data-disable-after="2025-06-17T18:30:00+05:30" data-reappear-at="2025-09-01T00:00:00+05:30">
 
             <img src="./resources/82.png" alt="" srcset="">
             <a href="./speakers/">
@@ -646,7 +646,7 @@ footer .recognition .img-holder img.logo-large {
             </p>
 
           </div>
-          <div class="speaker">
+          <div class="speaker" data-disable-after="2025-06-17T18:30:00+05:30" data-reappear-at="2025-09-01T00:00:00+05:30">
             <img src="./resources/91.png" alt="" srcset="">
             <a href="./speakers/">
               <h2>
@@ -655,7 +655,7 @@ footer .recognition .img-holder img.logo-large {
             <p>Canada Excellence Research Chair & Full Professor at Memorial University,</p>
             <p>Canada</p>
           </div>
-          <div class="speaker">
+          <div class="speaker" data-disable-after="2025-06-17T18:30:00+05:30" data-reappear-at="2025-09-01T00:00:00+05:30">
             <img src="./resources/83.png" alt="" srcset="">
             <a href="./speakers/">
               <h2>
@@ -670,7 +670,7 @@ footer .recognition .img-holder img.logo-large {
 
         <div class="grid">
 
-        <div class="speaker">
+        <div class="speaker" data-disable-after="2025-06-17T18:30:00+05:30" data-reappear-at="2025-09-01T00:00:00+05:30">
 
             <img src="./resources/81.png" alt="" srcset="">
             <a href="./speakers/">
@@ -683,7 +683,7 @@ footer .recognition .img-holder img.logo-large {
 
           </div>
 
-          <div class="speaker">
+          <div class="speaker" data-disable-after="2025-06-17T18:30:00+05:30" data-reappear-at="2025-09-01T00:00:00+05:30">
             <img src="./resources/93.png" alt="" srcset="">
             <a href="./speakers/">
               <h2>Prof. Venkatesha Prasad
@@ -693,7 +693,7 @@ footer .recognition .img-holder img.logo-large {
             <p>IEEE ComSoc Member Services Board </p>
 
           </div>
-          <div class="speaker">
+          <div class="speaker" data-disable-after="2025-06-17T18:30:00+05:30" data-reappear-at="2025-09-01T00:00:00+05:30">
             <img src="./resources/85.png" alt="" srcset="">
             <a href="./speakers/">
               <h2>Prof. Baek-Young Choi
@@ -708,7 +708,7 @@ footer .recognition .img-holder img.logo-large {
       </div>
       <div class="grid w-grid">
         
-        <div class="speaker grid-2-3">
+        <div class="speaker grid-2-3" data-disable-after="2025-06-17T18:30:00+05:30" data-reappear-at="2025-09-01T00:00:00+05:30">
           <!--<p class="topic">Introduction to Machine Learning & Deep Learning</p>-->
         
             <img src="./resources/84.png" alt="" srcset="">
@@ -721,7 +721,7 @@ footer .recognition .img-holder img.logo-large {
 
         </div>
 
-        <div class="speaker grid-2-3">
+        <div class="speaker grid-2-3" data-disable-after="2025-06-17T18:30:00+05:30" data-reappear-at="2025-09-01T00:00:00+05:30">
             <img src="./resources/86.png" alt="" srcset="">
             <a href="./speakers/">
               <h2>Prof. Swades De
@@ -1022,6 +1022,43 @@ footer .recognition .img-holder img.logo-large {
     <br>
     © 2025 IEEE Communication Society Student Branch Chapter, University of Jaffna. All Rights Reserved.
   </div>
+<!--
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const now = new Date();
+  document.querySelectorAll(".speaker[data-disable-after]")
+    .forEach(speaker => {
+      const cutoff = new Date(speaker.dataset.disableAfter);
+      if (now >= cutoff) {
+        // completely remove from DOM:
+        speaker.remove();
+      }
+    });
+});
+</script>-->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const now = new Date();
+
+  document.querySelectorAll(".speaker[data-disable-after]").forEach(el => {
+    const hideAt   = el.dataset.disableAfter ? new Date(el.dataset.disableAfter)   : null;
+    const showAt   = el.dataset.reappearAt  ? new Date(el.dataset.reappearAt)      : null;
+
+    // if we're between hideAt (inclusive) and showAt (exclusive), hide:
+    if (
+      hideAt &&
+      now >= hideAt &&
+      (!showAt || now < showAt)
+    ) {
+      el.style.display = "none";
+    } else {
+      // otherwise, ensure it’s visible
+      el.style.display = "";
+    }
+  });
+});
+</script>
+
 
 </body>
 <script>
