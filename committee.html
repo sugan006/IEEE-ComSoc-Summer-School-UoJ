@@ -10,7 +10,11 @@
   <link rel="stylesheet" href="style_org.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="icon" type="image/x-icon" href="./resources/cis.ico" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./resources/favicon_io/site.webmanifest">
 
   <style>
     body {
@@ -82,42 +86,44 @@
     rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
 
-    <style>
-  /* Mobile Responsive Footer */
-  @media (max-width: 768px) {
-    /* 1. Stack the columns */
-    footer {
-      flex-direction: column;
-      align-items: center;
-      overflow-x: visible;    /* disable horizontal scroll */
-      padding: 20px;
-    }
+  <style>
+    /* Mobile Responsive Footer */
+    @media (max-width: 768px) {
 
-    /* 2. Make each .recognition full-width (up to a max) */
-    footer .recognition {
-      width: 100%;
-      max-width: 400px;
-      margin-bottom: 30px;
-    }
+      /* 1. Stack the columns */
+      footer {
+        flex-direction: column;
+        align-items: center;
+        overflow-x: visible;
+        /* disable horizontal scroll */
+        padding: 20px;
+      }
 
-    /* 3. Let logos wrap and auto-fit in rows */
-    footer .recognition .img-holder {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-      grid-auto-rows: 80px;
-      gap: 10px;
-      height: auto;           /* remove fixed height */
-      margin-top: 15px;
-    }
+      /* 2. Make each .recognition full-width (up to a max) */
+      footer .recognition {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 30px;
+      }
 
-    /* ensure each logo stays within its cell */
-    footer .recognition .img-holder img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
-    }
-  }
+      /* 3. Let logos wrap and auto-fit in rows */
+      footer .recognition .img-holder {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        grid-auto-rows: 80px;
+        gap: 10px;
+        height: auto;
+        /* remove fixed height */
+        margin-top: 15px;
+      }
 
+      /* ensure each logo stays within its cell */
+      footer .recognition .img-holder img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+    }
   </style>
 </head>
 
@@ -199,7 +205,7 @@
           <div class="member">
             <h1><strong style="color: #205295;">Co-Chair</strong></h1>
             <img src="./resources/Chandula.png" alt="Dr. W.H. Sasinda Prabhashana" class="member-photo" />
-            
+
             <p class="member-name"><strong>W.H. Sasinda Prabhashana</strong></p>
             <p class="member-affil">Memorial University of Newfoundland, Canada</p>
           </div>
@@ -212,7 +218,7 @@
         <h3>Advisory Committee</h3>
         <div class="members-group">
           <div class="member">
-            <h1><strong style="color: #205295;">Chair</strong></h1>            
+            <h1><strong style="color: #205295;">Chair</strong></h1>
             <img src="./resources/kanesh.png" alt="Dr. A. Kaneswaran" class="member-photo" />
             <p class="member-name"><strong>Dr. A. Kaneswaran</strong></p>
             <p class="member-affil">Dean, Faculty of Engineering, University of Jaffna</p>
@@ -225,14 +231,14 @@
         <div class="members-group">
 
           <div class="member">
-            
+
             <img src="./resources/charles2.png" alt="Dr. E.Y.A Charles" class="member-photo" />
             <p class="member-name"><strong>Dr. E.Y.A Charles</strong></p>
             <p class="member-affil">Counselor - IEEE Student Branch University of Jaffna </p>
           </div>
 
           <div class="member">
-            
+
             <img src="./resources/Ahilan.png" alt="Prof. K. Ahilan" class="member-photo" />
             <p class="member-name"><strong>Prof. K. Ahilan</strong></p>
             <p class="member-affil">Department of Electrical and Electronic Engineering</p>
@@ -250,31 +256,31 @@
             <p class="member-affil">Chair, IEEE ComSoc (Sri Lanka Chapter)</p>
           </div>
 
-          
-          
+
+
         </div>
       </div>
 
       <div class="committee-role">
-       
+
         <div class="members-group">
 
-      <div class="member">
-            
+          <div class="member">
+
             <img src="./resources/shriparan.png" alt="Dr. S. Shriparen" class="member-photo" />
             <p class="member-name"><strong>Dr. S. Shriparen</strong></p>
             <p class="member-affil">Senior Treasurer - IEEE Student Branch University of Jaffna</p>
           </div>
 
           <div class="member">
-            
+
             <img src="./resources/valluvan.png" alt="Eng. R. Valluvan" class="member-photo" />
             <p class="member-name"><strong>Eng. R. Valluvan</strong></p>
             <p class="member-affil">Department of Electrical and Electronic Engineering</p>
           </div>
 
           <div class="member">
-            
+
             <img src="./resources/pravina.png" alt="Pravina" class="member-photo" />
             <p class="member-name"><strong>Miss. M. Pravina</strong></p>
             <p class="member-affil">Department of Electrical and Electronic Engineering</p>
@@ -282,15 +288,15 @@
           </div>
 
           <div class="member">
-            
+
             <img src="./resources/barath.png" alt="Mr. Barathraj" class="member-photo" />
             <p class="member-name"><strong>Mr. Barathraj</strong></p>
             <p class="member-affil">Department of Electrical and Electronic Engineering</p>
             <!--<p class="member-affil">University of Jaffna</p>-->
           </div>
         </div>
-        </div>
-      
+      </div>
+
       <div class="committee-role">
         <h3>Web & Design Committee</h3>
         <div class="members-group">
@@ -394,50 +400,50 @@
 -->
 
   <section>
-  <!-- Sponsors Footer -->
-  <footer>
-    <div class="recognition">
-      <h2>Organized By</h2>
-      <div class="img-holder2">
-        <img src="./resources/Crest-UJ-1024.png" alt="Crest UJ" class="logo2">
-        <img src="./resources/IEEE ComSoc UoJ Logo.png" alt="IEEE ComSoc UoJ" class="logo2">
-        
-      </div>
-    </div>
-    <div class="recognition">
-      <h2>Gold Sponsor</h2>
-      <div class="img-holder">
-        <img src="./resources/ieee-comsoc.png" alt="IEEE ComSoc" class="logo-large">
-      </div>
-    </div>
-    <div class="recognition">
-      <h2>Knowledge Partners</h2>
-      <div class="img-holder">
-        <img src="./resources/NVLogo_2D.jpg" alt="NVIDIA" class="logo-large">
-      </div>
-    </div>
+    <!-- Sponsors Footer -->
+    <footer>
+      <div class="recognition">
+        <h2>Organized By</h2>
+        <div class="img-holder2">
+          <img src="./resources/Crest-UJ-1024.png" alt="Crest UJ" class="logo2">
+          <img src="./resources/IEEE ComSoc UoJ Logo.png" alt="IEEE ComSoc UoJ" class="logo2">
 
-    <div class="recognition">
-      <h2>Technical Sponsor</h2>
-      <div class="img-holder2">
-        <img src="./resources/FN logo.png" alt="IEEE Collabratec" class="logo2 logo2-large">
-        
+        </div>
       </div>
-    </div>
+      <div class="recognition">
+        <h2>Gold Sponsor</h2>
+        <div class="img-holder">
+          <img src="./resources/ieee-comsoc.png" alt="IEEE ComSoc" class="logo-large">
+        </div>
+      </div>
+      <div class="recognition">
+        <h2>Knowledge Partners</h2>
+        <div class="img-holder">
+          <img src="./resources/NVLogo_2D.jpg" alt="NVIDIA" class="logo-large">
+        </div>
+      </div>
+
+      <div class="recognition">
+        <h2>Technical Sponsor</h2>
+        <div class="img-holder2">
+          <img src="./resources/FN logo.png" alt="IEEE Collabratec" class="logo2 logo2-large">
+
+        </div>
+      </div>
       <div class="recognition">
         <h2>Industrial Partners</h2>
         <div class="img-holder2">
           <!-- You can uncomment these if needed later -->
           <!--
         <img src="./resources/senz.jpg" alt="Senz" class="logo">
-        --> 
+        -->
           <!--<img src="./resources/slt-log.svg" alt="SLT Logo" class="logo2 logo2-exlarge">-->
           <img src="./resources/freesat.png" alt="Freesat" class="logo2 logo2-large">
           <img src="./resources/RSSL logo.png" alt="RSSL Logo" class="logo2 logo2-large">
-          
+
         </div>
       </div>
-    <!--
+      <!--
     <div class="recognition">
       <h2>Media Partners</h2>
       <div class="img-holder">
@@ -445,7 +451,7 @@
         <img src="./resources/ITN_Television_Logo_of_Sri_lanka.png" alt="ITN" class="logo-small">
       </div>
     -->
-    </div>
+      </div>
       <div class="recognition">
         <h2>Logistics &amp; Supply Partners</h2>
         <div class="img-holder2">
@@ -454,8 +460,8 @@
           <img src="./resources/ieee_Puzzler.png" alt="IEEE Puzzler" class="logo2">
         </div>
       </div>
-    </div>
-  </footer>
+      </div>
+    </footer>
   </section>
 
   <!-- Bottom copyright bar -->
