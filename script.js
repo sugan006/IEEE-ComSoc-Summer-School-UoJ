@@ -182,7 +182,7 @@ const important = () => {
           Call For Student Applications
           <div style="margin:5px 0; padding-left:1.8em;">
             <a
-              href="https://forms.gle/zrWEpKohofvLyKEq7"
+              href="https://www.comsoc.org/education-training/ieee-comsoc-school-series/2025-ieee-comsoc-school-series-jaffna-sri-lanka-event"
               class="btn-link"
             >
               Learn More &amp; Register
@@ -196,7 +196,7 @@ const important = () => {
           Call For Industry Workshop Applications
           <div style="margin:5px 0; padding-left:1.8em;">
             <a
-              href="https://www.comsoc.org/industry-workshop-application"
+              href="https://forms.gle/AEuttojA21mG7nKL7"
               class="btn-link"
               style="background-color:#861F41; color:#fff; padding:0.25em 0.5em; font-size:0.875rem; border-radius:0.25rem; display:inline-block;"
             >
@@ -211,7 +211,7 @@ const important = () => {
           Call For Academic Workshop Applications
           <div style="margin:5px 0; padding-left:1.8em;">
             <a
-              href="https://www.comsoc.org/academic-workshop-application"
+              href="https://forms.gle/8yLif88aL31ZWER46"
               class="btn-link"
               style="background-color:#861F41; color:#fff; padding:0.25em 0.5em; font-size:0.875rem; border-radius:0.25rem; display:inline-block;"
             >
