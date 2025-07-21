@@ -185,7 +185,7 @@ const important = () => {
               href="https://www.comsoc.org/education-training/ieee-comsoc-school-series/2025-ieee-comsoc-school-series-jaffna-sri-lanka-event"
               class="btn-link"
             >
-              Learn More &amp; Register
+              Learn More &amp; Apply
             </a>
           </div>
         </td>
@@ -200,7 +200,7 @@ const important = () => {
               class="btn-link"
               style="background-color:#861F41; color:#fff; padding:0.25em 0.5em; font-size:0.875rem; border-radius:0.25rem; display:inline-block;"
             >
-              Learn More &amp; Register
+              Learn More &amp; Apply
             </a>
           </div>
         </td>
@@ -215,7 +215,7 @@ const important = () => {
               class="btn-link"
               style="background-color:#861F41; color:#fff; padding:0.25em 0.5em; font-size:0.875rem; border-radius:0.25rem; display:inline-block;"
             >
-              Learn More &amp; Register
+              Learn More &amp; Apply
             </a>
           </div>
         </td>
