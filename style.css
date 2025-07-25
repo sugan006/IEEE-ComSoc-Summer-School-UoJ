@@ -1167,6 +1167,9 @@ footer .recognition:nth-child(5) {
 footer .recognition:nth-child(6) {
   border-top: 4px solid #2ecc71;
 }
+footer .recognition:nth-child(7) {
+  border-top: 4px solid #2eb4cc;
+}
 
 /* Always maintain single row, allow horizontal scroll */
 @media (max-width: 768px) {
