@@ -303,7 +303,7 @@ const detailed = () => {
             <td>08:00 – 08:30</td>
             <td>Registration</td>
           </tr>
-          <tr >
+          <tr>
             <td>08:30 – 09:00</td>
             <td>
             Inauguration </td>
@@ -541,7 +541,77 @@ const detailed = () => {
  </table>
 <hr style="width:40%;height:.5rem;margin:2rem auto;margin-top:4rem"/>
 -->
-    `;
+   
+<h1>Detailed Programme <p style="font-size:1rem"></p></h1>
+    <table class="mt-8" style="width: 100%">
+      <tr>
+        <td style="font-size:2rem;text-align:left;" colspan="2"><b>Day 1 : August 11, 2025 (Monday)</b></td>
+      </tr>
+      <tr class="stripped">
+        <td>07:30 – 08:00</td>
+        <td><b>Registration</b></td>
+      </tr>
+      <tr>
+        <td>08:00 – 09:00</td>
+        <td>
+          <b>Inaugurations</b> <br />
+        </td>
+      </tr>
+      <tr class="stripped">
+        <td>09:00 – 10:30</td>
+        <td>
+          <b>Academic Talk & Workshop</b> <br />
+          Prof. Dileeka Dias
+        </td>
+      </tr>
+      <tr>
+        <td>10:30 – 10:45</td>
+        <td>Tea Break</td>
+      </tr>
+      <tr class="stripped">
+        <td>10:45 – 13:15</td>
+        <td>
+          <b>Industry Workshop</b> <br />
+          Air Force <br />
+          <i>Radar Communications</i>
+        </td>
+      </tr>
+      <tr>
+        <td>13:15 – 14:00</td>
+        <td>Lunch</td>
+      </tr>
+      <tr class="stripped">
+        <td>14:00 – 16:00</td>
+        <td>
+          <b>Industry Workshop</b> <br />
+          Air Force <br />
+          <i>Radar Communications</i>
+        </td>
+      </tr>
+      <tr>
+        <td>16:00 – 16:15</td>
+        <td>Tea Break</td>
+      </tr>
+      <tr class="stripped">
+        <td>16:15 – 17:15</td>
+        <td>
+          <b>Tech Talk</b> <br />
+          Prof. Tameer / Prof. VP / Prof. Trung
+        </td>
+      </tr>
+      <tr>
+        <td>17:15 – 19:15</td>
+        <td>
+          <b>Industry Workshop</b> <br />
+          Free Sat
+        </td>
+      </tr>
+    </table>
+    <hr style="width:40%;height:.5rem;margin:2rem auto;margin-top:4rem"/>
+    <!-- Day 2 and Day 3 go here if unchanged -->
+
+
+`;
 };
 function initial(loadContent) {
   switch (loadContent) {
